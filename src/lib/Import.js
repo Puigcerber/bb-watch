@@ -12,7 +12,7 @@ class Import {
 	doImport() {
 		this.startTime = process.hrtime();
 		importStart();
-		return packageImport(Config.packageName, {port: Config.port, context: Config.portalContext});
+		return packageImport(Config.packageName, {port: Config.port, context: Config.portalContext, username: Config.portalUsername, password: Config.portalPassword});
 	}
 
 	/**
